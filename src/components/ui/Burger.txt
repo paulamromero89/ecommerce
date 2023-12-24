@@ -1,0 +1,38 @@
+import React, { useState } from 'react';
+
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+
+}
+
+export function Burger({ children, ...props }: Props) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <button
+      className="block sm:hidden"
+      onClick={toggleMenu}
+      aria-expanded={isOpen}
+      aria-label="Toggle menu"
+      {...props}
+    >
+      <svg
+        className="h-6 w-6 fill-current"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        {isOpen ? (
+          <path fillRule="evenodd" clipRule="evenodd" d="M19 13H5v-2h14v2z" />
+        ) : (
+          <path fillRule="evenodd" clipRule="evenodd" d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z" />
+        )}
+      </svg>
+      {children}
+    </button>
+  );
+}
+
+export default Burger;
