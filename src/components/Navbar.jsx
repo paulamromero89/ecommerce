@@ -26,10 +26,6 @@ const Navbar = () => {
 
       <div className='hidden md:flex items-center'>
 
-
-
-        
-
           <div className='relative ml-4 hidden md:block'>
           <input
             type='text'
@@ -49,7 +45,7 @@ const Navbar = () => {
           <li className='p-4'>Contact</li>
         </ul>
 {/* Cart button */}
-<button className='bg-black text-white hidden md:flex items-center py-2 rounded-full'>
+<button className='mr-4 border border-white text-white flex items-center py-2 mx-auto px-4 rounded-full p-4 '>
         <BsFillCartFill size={20} className='mr-2' /> Cart
       </button>
       </div>
