@@ -96,6 +96,27 @@ const Cart = () => {
             <div className="flex flex-1 items-center justify-end gap-2">
               <form>
                 <label for="Line2Qty" class="sr-only"> Quantity </label>
+                <div>
+  <label for="Quantity" class="sr-only"> Quantity </label>
+
+  <div class="flex items-center rounded border border-gray-200">
+    <button type="button" class="h-10 w-10 leading-10 text-gray-600 transition hover:opacity-75">
+      &minus;
+    </button>
+
+    <input
+      type="number"
+      id="Quantity"
+      value="1"
+      class="h-10 w-16 border-transparent text-center [-moz-appearance:_textfield] sm:text-sm [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none"
+    />
+
+    <button type="button" class="h-10 w-10 leading-10 text-gray-600 transition hover:opacity-75">
+      &plus;
+    </button>
+  </div>
+</div>
+
 
                 <input
                   type="number"
