@@ -8,6 +8,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Importa Routes y Route
 import Cart from './components/Cart';
+import Categories from './components/Categories';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
 
         <Route path='/' element={
           <div> <Hero />
+          <Categories/>
           <ProductCards/></div>
          } />
 
