@@ -26,11 +26,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
-      <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>REACT</h1>
+
+    <div className='bg-black w-full flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
+      <img className ='pl-10 pr-2 py-2 w-[15rem]' src="https://casiostore.rower.com.ve/cdn/shop/files/LOGO_WEB-01-01_868x250.png?v=1692972445" alt="Logo" />
+
       
 
-      <div className='hidden md:flex items-center'>
+      <div className='hidden md:flex items-center '>
 
           <div className='relative ml-4 hidden md:block'>
           <input
@@ -38,7 +40,7 @@ const Navbar = () => {
             placeholder='Buscar...'
             value={search}
             onChange={handleSearchChange}
-            className='pl-10 pr-2 py-2 text-black'
+            className='bg-black pl-10 pr-2 py-2 text-gray100 border border-collapse rounded'
             onKeyPress={(event) => event.key === 'Enter' && submitSearch()}
           />
           <AiOutlineSearch className='absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-500' size={20} />
@@ -61,7 +63,7 @@ const Navbar = () => {
       </div>
       
       <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r-gray-900 bg-[#000300] ease-in-out duration-500' : 'fixed left-[-100%]'}>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>REACT</h1> {/* Cart button */}
+      
 
         <ul className='uppercase p-4'>
           <li className='p-4 border-b border-gray-600'> <a  href="/">Home</a></li>
@@ -76,7 +78,7 @@ const Navbar = () => {
             placeholder='Buscar...'
             value={search}
             onChange={handleSearchChange}
-            className='pl-10 pr-2 py-2 text-black'
+            className='bg-black pl-10 pr-2 py-2 text-gray100 border border-collapse rounded'
             onKeyPress={(event) => event.key === 'Enter' && submitSearch()}
           />
           <AiOutlineSearch className='absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-500' size={20} />
