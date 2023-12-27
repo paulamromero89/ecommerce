@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
 
     <div className='bg-black w-full flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
-      <img className ='pl-10 pr-2 py-2 w-[15rem]' src="https://casiostore.rower.com.ve/cdn/shop/files/LOGO_WEB-01-01_868x250.png?v=1692972445" alt="Logo" />
+     <a href="./"> <img className ='pl-10 pr-2 py-2 w-[15rem]' src="https://casiostore.rower.com.ve/cdn/shop/files/LOGO_WEB-01-01_868x250.png?v=1692972445" alt="Logo" /></a>
 
       
 
@@ -85,11 +85,11 @@ const Navbar = () => {
         </div>
 
 
-        <button 
+        <button href="./Cart"
       className='mt-4 absolute left-2 border border-white text-white flex items-center py-2 px-4 rounded-full p-4'
       onClick={handleCartClick}
     >
-      <BsFillCartFill size={20} className='mr-2' /> Cart
+      <BsFillCartFill size={20} className='mr-2' /> Carrito
     </button>
 
 

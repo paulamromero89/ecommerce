@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
       <Typography color="blue-gray" className="font-normal">
-        &copy; 2023 Material Tailwind
+        &copy; Powered By Casio 
       </Typography>
       <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
         <li>
@@ -14,7 +14,7 @@ export function Footer() {
             color="blue-gray"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
           >
-            About Us
+            <a href="about">About Us</a>
           </Typography>
         </li>
         <li>
