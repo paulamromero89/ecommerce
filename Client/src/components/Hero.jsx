@@ -20,7 +20,7 @@ function Hero() {
 
           <div>
             <p className='md:text-2xl text-xl font-bold text-gray-200'> Reloj G-shock correa de resina </p>
-            <button className=' border border-white w-[200px] rounded-full font-medium my-6 mx-auto py-3 text-gray-200'> + INFO </button>
+            <button className=' border border-white w-[200px] rounded-full font-medium my-6 mx-auto py-3 text-gray-200'> <a href="./productDetail">+ INFO </a></button>
           </div>
           
         </div>
