@@ -11,7 +11,7 @@ import Cart from "./components/Cart";
 import Categories from "./components/Categories";
 import Testimonials from "./components/Testimonials";
 import About from "./components/About";
-import CreateProduct from "./components//CreateProduct";
+import CreateProduct from "./components/CreateProduct";
 import UpdateProduct from "./components/UpdateProduct";
 import Adress from "./components/Adress";
 import AdressUpdate from "./components/AdressUpdate";
